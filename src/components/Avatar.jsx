@@ -32,7 +32,7 @@ function Avatar() {
             yourself through avatars and mingle across the metaverse in style!
           </p>
           <div className="mt-4 flex flex-col justify-center gap-6 lg:flex-row lg:items-center lg:justify-start">
-            <a className="w-full rounded-3xl bg-bluey px-6 py-2 text-center font-semibold text-white	 hover:bg-blueyLight md:w-3/5	 md:px-4 ">
+            <a className="w-full  rounded-3xl bg-bluey px-6 py-2 text-center font-semibold text-white hover:bg-blueyLight	 md:w-3/5 md:px-2	">
               Customize your avatar
             </a>
             <a className="font-semibold text-white">Learn more</a>

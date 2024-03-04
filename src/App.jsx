@@ -12,28 +12,33 @@ import Navbar from './components/Navbar'
 //icon import
 import dc from './assets/discord-circle.svg'
 
+// library import
+import { ReactLenis } from '@studio-freight/react-lenis'
+
 function App() {
   return (
     <>
-      <Navbar />
-      <div>
-        <Hero />
-        <div className="background-full overflow-hidden">
-          <Avatar />
-          <Creator />
-          <Brands />
-          <Land />
-          <Experiences />
-          <Metaverse />
+      <ReactLenis root>
+        <Navbar />
+        <div>
+          <Hero />
+          <div className="background-full overflow-hidden">
+            <Avatar />
+            <Creator />
+            <Brands />
+            <Land />
+            <Experiences />
+            <Metaverse />
+          </div>
+          <Footer />
         </div>
-        <Footer />
-      </div>
-      <a
-        className="fixed bottom-5 right-5 z-30 opacity-85 hover:opacity-100"
-        href="https://discord.com/invite/thesandboxgame"
-      >
-        <img src={dc} className="  w-12" />
-      </a>
+        <a
+          className="fixed bottom-5 right-5 z-30 opacity-85 hover:opacity-100"
+          href="https://discord.com/invite/thesandboxgame"
+        >
+          <img src={dc} className="  w-12" />
+        </a>
+      </ReactLenis>
     </>
   )
 }
