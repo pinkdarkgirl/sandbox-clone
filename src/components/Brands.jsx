@@ -57,14 +57,17 @@ function BrandsSlider() {
 
   const videoRefs = useRef([])
 
+  // Function to handle carousel change (increment slide)
   const handleChange = (currentSlide) => {
     setCurrentSlide(currentSlide + 1)
   }
 
+  // Intersection observer for detecting in-view state
   const { ref, inView } = useInView({
     threshold: 0.3,
   })
 
+  // Get class name for video element based on desktop status and hover
   const getVideoClassName = (index) => {
     if (!isDesktop) {
       return ''
@@ -75,6 +78,7 @@ function BrandsSlider() {
     }
   }
 
+  // Get class name for logo element based on desktop status and hover
   const getLogoClassName = (index) => {
     if (!isDesktop) {
       return currentSlide === index ? 'animate-goDown' : ''

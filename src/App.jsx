@@ -9,6 +9,9 @@ import Avatar from './components/Avatar'
 import Hero from './components/Hero'
 import Navbar from './components/Navbar'
 
+//icon import
+import dc from './assets/discord-circle.svg'
+
 function App() {
   return (
     <>
@@ -25,6 +28,12 @@ function App() {
         </div>
         <Footer />
       </div>
+      <a
+        className="fixed bottom-5 right-5 z-30 opacity-85 hover:opacity-100"
+        href="https://discord.com/invite/thesandboxgame"
+      >
+        <img src={dc} className="  w-12" />
+      </a>
     </>
   )
 }

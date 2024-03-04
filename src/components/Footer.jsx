@@ -17,7 +17,7 @@ import {
 
 function Footer() {
   return (
-    <div className=" relative bg-primary lg:pb-5 ">
+    <div className=" relative z-20 bg-primary lg:pb-5 ">
       <div className="mx-auto my-0 max-w-96 px-6 lg:flex lg:max-w-full lg:items-start lg:justify-evenly lg:gap-5 lg:px-5 lg:pt-8">
         <div className="py-7 lg:p-0 ">
           <h2 className="py-6 text-sm tracking-wide text-white sm:py-3 ">
