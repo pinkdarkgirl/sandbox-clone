@@ -52,8 +52,14 @@ const responsive = {
     slidesToSlide: 2,
     partialVisibilityGutter: 10,
   },
+  mobile2: {
+    breakpoint: { max: 670, min: 590 },
+    items: 2,
+    slidesToSlide: 1,
+  },
+
   mobile: {
-    breakpoint: { max: 670, min: 0 },
+    breakpoint: { max: 590, min: 0 },
     items: 1,
     slidesToSlide: 1,
     partialVisibilityGutter: 40,
@@ -70,7 +76,7 @@ function Slider() {
       {games.map((game, index) => (
         <div
           key={index}
-          className="relative h-72 min-w-72 cursor-pointer sm:w-72"
+          className="relative h-72 w-72 min-w-72 cursor-pointer sm:w-72 "
         >
           <div>
             <div>
